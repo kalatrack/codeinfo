@@ -21,11 +21,12 @@
 					</thead>
 					
 					<?php 
+						$a = 1;
 						$code_list = all_code();
 						while ($code = mysqli_fetch_assoc($code_list)) { ?>
 					<tr>
-						<td><?php echo $code['id']; ?></td>
-						<td><?php echo $code['name']; ?></td>
+						<td><?php echo $a++; ?></td>
+						<td><?php echo "<h5>{$code['name']}</h5>"; ?></td>
 						<td><?php echo substr($code['language'],0,20); ?></td>
 						<td><?php echo substr($code['description'],0,20); ?>
 						<a href="full_code.php?id=<?php echo $code['id'];?>"><span class="btn btn-primary">Read More</span></a></td>

@@ -21,9 +21,12 @@
                         <li class="nav" ><a href="index.php" >Home</a></li>
                         <li class="nav"><a href="code.php">Codes</a></li>
                         <li class="nav"><a href="fav.php">Favorite</a></li>
+                        <li class="nav"><a href="Search.php">Search</a></li>
+                        
                     </ul>
                 </div> 
             </nav>
+
             <ol class="breadcrumb hidden-xs" style="margin-top: 40px">
                 <li class="active"><a href="index.php">Home</a></li>
                 <li class="active"><a href="code.php">Codes</a></li>
@@ -31,7 +34,7 @@
             </ol>
             <?php 
           
-                if(!$title == "Codes"){
+                if(!$title == "Codes" || !$title == "search"){
              ?>
             <h3 class="text-success">This Site is usually made for Collecting Information About the Code that used frequently in Projects</h3>
             <?php } ?>

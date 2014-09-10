@@ -7,6 +7,23 @@
 		const l = 'interface variable';
 		public function foos();
 	}
+	/*
+	@var fs 
+	@abstract
+	@author: Muhammad Hussain
+
+	 */
+	/**
+	* @author 
+	*/
+	class ClassName extends AnotherClass
+	{
+		
+		function __construct(argument)
+		{
+			# code...
+		}
+	}
 	class bar implements foo{
 			
 		public function fs(){
